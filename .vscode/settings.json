@@ -1,0 +1,5 @@
+{
+    "solidity.compileUsingRemoteVersion": "0.8.15",
+    "solidity.defaultCompiler": "remote",
+    "solidity.enabledAsYouTypeCompilationErrorCheck": true
+}
