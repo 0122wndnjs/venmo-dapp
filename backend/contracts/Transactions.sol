@@ -28,4 +28,17 @@ contract Transactions {
         // emit the event we created earlier
         emit Transfer(msg.sender, receiver, amount, message, block.timestamp);
     }
+
+    // Function to get all the transactions
+    function getAllTransactions() public view returns (TransferStruct[] memory) {
+        return transactions;
+    }
+
+    // Function to get the number of transactions
+    function getTransactionCount() public view returns (uint256) {
+        return transactionCount;
+    }
+
+    // view keyword means that the functino can only be used to view the data
+    // therefore no ehters needed to run this function.
 }
